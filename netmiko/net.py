@@ -1,5 +1,3 @@
-"""Example of Netmiko Configuration"""
-
 from netmiko import ConnectHandler
 import time
 from pathlib import Path
@@ -63,7 +61,7 @@ COMMAND_SET_OSPF_R2 = [
     "ip add dhcp",
     "int g0/1",
     "no shut",
-    "ip add 172.31.18.18 255.255.255.252",
+    "ip add 172.31.20.2 255.255.255.0",
     "int lo0",
     "ip add 2.2.2.2 255.255.255.255",
     "exit",
